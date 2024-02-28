@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-image: url("clock.jpg");
+    background-color: #cccccc;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: left;
+}
+
+.date {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+.date-time, .time {
+    background: #090909;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.time {
+    font-size: 100px;
+    width: 150px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.heading {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.message-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.message {
+    background-color: #090909;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    animation: slideIn 0.5s ease-in-out forwards;
+    display: none;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
